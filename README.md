@@ -39,18 +39,19 @@ Some of the features Mandarin provides are:
 
 ## 📸 Android Screenshots
 
-  HomePage                 |   Loading Screen          |  Record Not Found
+  HomePage                 |      Internet Issue       |    Loading Screen
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Home%20Screen.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Status%20Checking.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/record%20not%20found.jpeg?raw=true)
+![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Home%20Screen.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Internet%20Connectivity%20Issue.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Status%20Checking.jpeg?raw=true)
 
-  Internet Issue             
-:-------------------------:
-![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Internet%20Connectivity%20Issue.jpeg?raw=true)|
+  Record Not Found         |  Attendance Mark          
+:-------------------------:|:-------------------------:
+![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/record%20not%20found.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Success.jpeg?raw=true)|
 
 ## Diagram 
-  App Flow Chart             
+  App Flow Chart               
 :-------------------------:
 ![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Documentation/diagram.png?raw=true)|
+
 
 
 <!-- GETTING STARTED -->
