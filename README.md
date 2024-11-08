@@ -141,10 +141,15 @@ flutter run
 ```sh
 flutter build apk --release
 ```
+- Flutter will automatically Build and Release, store it into `(Project-Name)/build/app/outputs/flutter-apk/app-release.apk` change Apk name. Enjoy! 
 
 ## Minimum Versions
 
-- Android: 22
+- Android: 06
+  
+## Maximum Versions
+
+- Android: 18
 
 ## API Documentation
 
