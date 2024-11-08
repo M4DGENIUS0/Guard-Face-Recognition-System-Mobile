@@ -2,9 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/playstore.png?raw=true">
-    
-  </a>
+  <img src="https://raw.githubusercontent.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/refs/heads/master/assets/playstore.png" alt="Logo" style="width:128px;height:128px;">
 
   <h3 align="center">Gaurd Face Recognition System</h3>
 
