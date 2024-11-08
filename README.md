@@ -28,9 +28,6 @@
 Mandarin is an application that uses Custom Face Detection Service to mark Attendance of Guard and Employees, built for only Android Plateform.
 
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💪 Features
 
 Some of the features Mandarin provides are:
@@ -40,7 +37,7 @@ Some of the features Mandarin provides are:
 - 🤗 **Simple UI**: Quickly understand the ins and outs of Mandarin
 - 🛠️ **Offline Scenario**: Handle offline scenrio incase of Device not Connected to Internet or Internet Glitchs. A alert box will Appear and ask you to leave the app.
 
-## Android Screenshots
+## 📸 Android Screenshots
 
   HomePage                 |   Loading Screen          |  Record Not Found
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -50,176 +47,146 @@ Some of the features Mandarin provides are:
 :-------------------------:
 ![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Internet%20Connectivity%20Issue.jpeg?raw=true)|
 
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Flutter][Fluttter]][Next-url]
-* [![Provider][Provider]][React-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Diagram 
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## 💻 Requirements
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+- Any Operating System (ie. MacOS X, Linux, Windows)
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+- A little knowledge of Dart and Flutter
 
-### Prerequisites
+## Installation Guide
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Before beginning with the installation, you will need the following with the mentioned versions
 
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install Depandencies
-   ```sh
-   flutter pub get
-   ```
-4. Enter your API in `lib/repository/service.dart`
-   ```js
-   String baseUrl = 'Your-API-Key';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Android Studio Version - Ladybug | 2024.2.1
+- Flutter Version - 3.24.2
+- Dart - 3.7.0
+- Xcode - 16.0
+- VS Code - 1.95
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+## Installation
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+> NOTE: It is recommended that you run a simple Hello World program in Flutter first before proceeding further so that you are sure that the environment is properly set up.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### API Key
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Make sure your API must be working properly and active.
 
+1. Get a API Key.
 
+## Clone the repository
 
-<!-- ROADMAP -->
-## Roadmap
+- Open your terminal or command prompt or Windows PowerShell
+- Navigate to the directory where you want to save the project
+- Use the git clone command followed by the repository URL
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+```sh
+git clone https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile.git
+```
+## Install dependencies
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- Navigate to the project's directory
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+cd <repository-name>
+```
 
+- Run the following command to install the required packages
 
+```sh
+flutter pub get
+```
+## Configure API
 
-<!-- CONTRIBUTING -->
-## Contributing
+- Enter your API key at `lib/repository/service.dart` at Line 09, Col 25
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+```dart
+String APIKey = 'Your-API-Key';
+```
+   
+> Note: Add the value of the complete URL ending with the API endpoint.In case of ngrok  E.g - https://0000-00-000-000-000.ngrok-free.app
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+### Connect a device or emulator
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+* Physical Device
 
-### Top contributors:
+  1. Enable USB debugging on your device
+  2. Connect it to your computer using a USB cable.
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
-</a>
+* Emulator
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  1. Start an Android or iOS emulator using your preferred IDE or tools.
 
+### Run the Project
+
+- Use the following command to build and run the project
+
+- Use it for Testing.
+```sh
+flutter run
+```
+<p align="center">OR</p>
+
+- Use it to Official Release the APK
+
+```sh
+flutter build apk --release
+```
+
+## Minimum Versions
+
+- Android: 22
+
+## API Documentation
+
+For the API Documentation, please go through - https://drive.google.com/file/d/1cYxa58H9n-Pkh1q6CwGNScEQoB1Ky0ck/view?usp=drive_link
+
+## 🔽 Download
+
+You can download the APP at [Mandarin App](https://drive.google.com/file/d/1wItp35WbRITIzUVU9NFWrXjEDdeSBs6s/view?usp=drive_link) 
+
+## Directory Structure
+```
+lib
+│───main.dart    
+└───src
+    │───views
+    |    └──GaurdScreen.dart
+    │───repository    
+    |    └──service.dart
+    │───Provider
+    |    └──AttendieProvider.dart
+    │───Utils
+    |    └──assets.dart
+    └───Component
+         │──widget
+         |   |──AskPermission.dart
+         |   └──NetworkFailue.dart
+         └──AlertDialog.dart
+```
 
 
 <!-- LICENSE -->
-## License
+## 🔖 LICENCE
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
-## Contact
+## 🤓 Author(s)
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ahmad Nasir - [@ahmad-nasir001](https://linkedin.com/in/ahmad-nasir001) - an7539661@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Project Link: [https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
