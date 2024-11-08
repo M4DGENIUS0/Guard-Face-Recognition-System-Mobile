@@ -9,7 +9,7 @@
   <h3 align="center">Gaurd Face Recognition System</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An Facial Attendance System for Gaurds.
     <br />
     <a href="https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/"><strong>Explore the docs »</strong></a>
     <br />
@@ -48,14 +48,8 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Flutter][Fluttter]][Next-url]
+* [![Provider][Provider]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,9 +78,9 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install NPM packages
+3. Install Depandencies
    ```sh
-   npm install
+   flutter pub get
    ```
 4. Enter your API in `lib/repository/service.dart`
    ```js
