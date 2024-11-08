@@ -65,7 +65,7 @@ class _GaurdAttendanceScreenState extends State<GaurdAttendanceScreen> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          "Guard Face Recognition System",
+          "Mandarin Providing Solution",
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: Colors.transparent,

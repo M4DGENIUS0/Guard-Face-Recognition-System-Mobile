@@ -3,13 +3,12 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:http_parser/http_parser.dart';
 
-class AttendanceService {
+class GFRAttendanceService {
   final Dio dio;
 
-  AttendanceService(
-      {String baseUrl = 'https://7083-34-32-162-171.ngrok-free.app'})
+  GFRAttendanceService({String APIKey = 'Your-API-Key'})
       : dio = Dio(BaseOptions(
-          baseUrl: baseUrl,
+          baseUrl: APIKey,
           connectTimeout: const Duration(seconds: 30),
           receiveTimeout: const Duration(seconds: 30),
         ));

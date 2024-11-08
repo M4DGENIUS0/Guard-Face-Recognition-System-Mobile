@@ -10,7 +10,7 @@ class AttendieProvider with ChangeNotifier {
   // Code for Attendie mark
   Future<void> markAttendance(BuildContext context) async {
     try {
-      final AttendanceService service = AttendanceService();
+      final GFRAttendanceService service = GFRAttendanceService();
 
       // Set loading to true
       isLoading = true;
@@ -35,11 +35,14 @@ class AttendieProvider with ChangeNotifier {
       if (result['status'] == 'success') {
         Mark = true;
         showAlertDialog(context, "${result["status"]}",
-            "${result["message"]}\n${result['guard']['name']}");
+            "${result["message"]}\n${result['guard']['name']}", Colors.green);
       } else {
         Mark = false;
-        showAlertDialog(context, "${result["status"]}",
-            "${result['message']} \nAnti Proof Score: ${result["anti_spoof_score"]}");
+        showAlertDialog(
+            context,
+            "${result["status"]}",
+            "${result['message']} \nAnti Proof Score: ${result["anti_spoof_score"]}",
+            Colors.red);
       }
 
       // updating Mark
@@ -56,12 +59,13 @@ class AttendieProvider with ChangeNotifier {
     }
   }
 
-  void showAlertDialog(BuildContext context, String title, String content) {
+  void showAlertDialog(
+      BuildContext context, String title, String content, Color color) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         title: Text(title),
-        content: Text(content),
+        content: Text(content, style: TextStyle(color: color)),
         actions: [
           TextButton(
             onPressed: () {
