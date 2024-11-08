@@ -1,12 +1,11 @@
 import 'dart:io';
-
 import 'package:dio/dio.dart';
 import 'package:http_parser/http_parser.dart';
 
 class GFRAttendanceService {
   final Dio dio;
 
-  GFRAttendanceService({String APIKey = 'Your-API-Key'})
+  GFRAttendanceService({String APIKey = 'Your-API-Key-Here'})
       : dio = Dio(BaseOptions(
           baseUrl: APIKey,
           connectTimeout: const Duration(seconds: 30),
