@@ -88,9 +88,9 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Enter your API in `lib/repository/service.dart`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   String baseUrl = 'Your-API-Key';
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
