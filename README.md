@@ -48,7 +48,9 @@ Some of the features Mandarin provides are:
 ![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Internet%20Connectivity%20Issue.jpeg?raw=true)|
 
 ## Diagram 
-
+  App Flow Chart             
+:-------------------------:
+![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Documentation/diagram.png?raw=true)|
 
 
 <!-- GETTING STARTED -->
