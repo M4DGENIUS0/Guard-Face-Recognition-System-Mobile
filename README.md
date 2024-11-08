@@ -2,14 +2,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://raw.githubusercontent.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/refs/heads/master/assets/playstore.png" alt="Logo" style="width:128px;height:128px;">
+  <img src="https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/logo.png?raw=true" alt="Logo" style="width:250px;height:128px;">
 
   <h3 align="center">Mandarin, Providing Solution</h3>
 
   <p align="center">
     An Facial Attendance System for Gaurds.
     <br />
-    <a href="https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/"><strong>Explore the docs »</strong></a>
+<!--     <a href="https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/"><strong>Explore the docs »</strong></a> -->
     <br />
     <br />
     <a href="">View Demo</a>
@@ -20,16 +20,35 @@
   </p>
 </div>
 
-<IMG SRC="">.
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+
+
+## ❓ About
+
+Mandarin is an application that uses Custom Face Detection Service to mark Attendance of Guard and Employees, built for only Android Plateform.
 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 💪 Features
 
+Some of the features Mandarin provides are:
+
+- 💉 **Loading State**: Show loading States while calling the API
+- 📱 **Timeout**: It can handle timeouts(Connect Timeout, Recieve Timeout) duration is 30 sec.
+- 🤗 **Simple UI**: Quickly understand the ins and outs of Mandarin
+- 🛠️ **Offline Scenario**: Handle offline scenrio incase of Device not Connected to Internet or Internet Glitchs. A alert box will Appear and ask you to leave the app.
+
+## Android Screenshots
+
+  HomePage                 |   Loading Screen          |  Record Not Found
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Home%20Screen.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Status%20Checking.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/record%20not%20found.jpeg?raw=true)
+
+  Internet Issue             
+:-------------------------:
+![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Internet%20Connectivity%20Issue.jpeg?raw=true)|
 
 ### Built With
 
