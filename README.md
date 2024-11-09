@@ -39,13 +39,13 @@ Some of the features Mandarin provides are:
 
 ## 📸 Android Screenshots
 
-  HomePage                 |      Internet Issue       |    Loading Screen
+  HomePage                 |      API Input            |    Internet Issue
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Home%20Screen.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Internet%20Connectivity%20Issue.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Status%20Checking.jpeg?raw=true)
+![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Home%20Screen.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/api.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Internet%20Connectivity%20Issue.jpeg?raw=true)
 
-  Record Not Found         |  Attendance Mark          
-:-------------------------:|:-------------------------:
-![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/record%20not%20found.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Success.jpeg?raw=true)|
+  Loading Screen           |  Record Not Found         |  Attendance Mark
+:-------------------------:|:-------------------------:|:-------------------------:
+![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Status%20Checking.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/record%20not%20found.jpeg?raw=true)|![](https://github.com/M4DGENIUS0/Guard-Face-Recognition-System-Mobile/blob/master/assets/Success.jpeg?raw=true)
 
 ## Diagram 
   App Flow Chart               
@@ -105,6 +105,7 @@ cd <repository-name>
 ```sh
 flutter pub get
 ```
+<!--
 ## Configure API
 
 - Enter your API key at `lib/repository/service.dart` at Line 09, Col 25
@@ -114,7 +115,7 @@ String APIKey = 'Your-API-Key';
 ```
    
 > Note: Add the value of the complete URL ending with the API endpoint.In case of ngrok  E.g - https://0000-00-000-000-000.ngrok-free.app
-
+-->
 ### Connect a device or emulator
 
 * Physical Device
@@ -142,6 +143,12 @@ flutter run
 flutter build apk --release
 ```
 - Flutter will automatically Build and Release, store it into `(Project-Name)/build/app/outputs/flutter-apk/app-release.apk` change Apk name. Enjoy! 
+
+## Configure API
+
+- Enter your API key when Marking Attendance in App.
+
+> Note: Add the value of the complete URL ending with the API endpoint.In case of ngrok  E.g - https://0000-00-000-000-000.ngrok-free.app
 
 ## Minimum Versions
 
