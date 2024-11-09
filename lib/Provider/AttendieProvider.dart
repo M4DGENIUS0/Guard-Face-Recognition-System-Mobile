@@ -7,29 +7,42 @@ import 'package:image_picker/image_picker.dart';
 class AttendieProvider with ChangeNotifier {
   bool isLoading = false;
   bool Mark = false;
-  // Code for Attendie mark
-  Future<void> markAttendance(BuildContext context) async {
-    try {
-      final GFRAttendanceService service = GFRAttendanceService();
+  String? apiKey;
 
-      // Set loading to true
+  // Setter to update API key
+  void setApiKey(String key) {
+    apiKey = key;
+    notifyListeners();
+  }
+
+  Future<void> markAttendance(BuildContext context) async {
+    if (apiKey == null) {
+      // Handle missing API key
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please provide an API key.')),
+      );
+      return;
+    }
+
+    final GFRAttendanceService service = GFRAttendanceService(APIKey: apiKey!);
+
+    try {
       isLoading = true;
       notifyListeners();
 
-      // Capture Photo
       final ImagePicker picker = ImagePicker();
       final XFile? image = await picker.pickImage(
         source: ImageSource.camera,
         preferredCameraDevice: CameraDevice.front,
         imageQuality: 85,
       );
+
       if (image == null) {
         isLoading = false;
         notifyListeners();
         return;
       }
 
-      // Mark attendance
       final result = await service.markAttendance(File(image.path));
 
       if (result['status'] == 'success') {
@@ -45,36 +58,35 @@ class AttendieProvider with ChangeNotifier {
             Colors.red);
       }
 
-      // updating Mark
       notifyListeners();
     } catch (e) {
-      print(e.toString());
       ScaffoldMessenger.of(context)
         ..hideCurrentMaterialBanner()
         ..showSnackBar(SnackBar(content: Text(e.toString())));
     } finally {
-      // Set loading to false
       isLoading = false;
       notifyListeners();
     }
   }
 
-  void showAlertDialog(
-      BuildContext context, String title, String content, Color color) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Text(title),
-        content: Text(content, style: TextStyle(color: color)),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            child: const Text("Okay"),
-          ),
-        ],
-      ),
-    );
-  }
+  // Existing showAlertDialog method
+}
+
+void showAlertDialog(
+    BuildContext context, String title, String content, Color color) {
+  showDialog(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: Text(title),
+      content: Text(content, style: TextStyle(color: color)),
+      actions: [
+        TextButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text("Okay"),
+        ),
+      ],
+    ),
+  );
 }
